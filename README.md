@@ -1,7 +1,7 @@
 mobileRAMS
 
-Test Recycler View/binding/fragments. 
-Vector image creation (experimenting)
+On site RAMS software. Autopopulate from SQLite/autopopulate date/time/location/nearest hospital. 
+Send all information via email to H&S manager. 
 WIP
 
 
@@ -11,16 +11,7 @@ WIP
 <br>
 
 <div>
-  <img src="https://raw.githubusercontent.com/timnewark/testRecyclerView/master/Screenshot_1.png" alt="Main Screen" height="700dp">
-</div>
-<br>
-<br>
-<br>
-* RecyclerView screen example (nightmode):
-<br>
-<br>
-<div>
-  <img src="https://raw.githubusercontent.com/timnewark/testRecyclerView/master/Screenshot_20220825-105822.png" alt="Main Screen" height="700dp">
+  <img src="https://raw.githubusercontent.com/timnewark/mobileRAMS/master/Screenshot_20220126-124849.png" alt="Main Screen" height="700dp">
 </div>
 <br>
 <br>
