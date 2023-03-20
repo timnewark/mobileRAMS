@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Applicationvv</string>
+    <string name="col1"><u><b>Column 1</b></u></string>
+    <string name="col2"><u><b>Column 2</b></u></string>
+    <string name="col3"><u><b>Column 3</b></u></string>
+    <string name="col4"><u><b>Column 4</b></u></string>
+    <string name="PotHaz"><b>Potential <br/> hazards?</b></string>
+    <string name="WhaHap"><b>What could <br/> happen?</b></string>
+    <string name="ActReq"><b>Action <br/> required?</b></string>
+    <string name="SafPro"><b>Safe to <br/> proceed?</b></string>
+
+</resources>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- commenting in XML-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextViewStructureID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Structure ID:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextStructureID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="enter asset ID"
+                    android:inputType="number"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Examiner Name:"
+                    android:textSize="18sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextExaminerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"></AutoCompleteTextView>/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Date:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/EditTextDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Date" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Time:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/EditTextTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Time" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextViewWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Weather:"
+                    android:textSize="18sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="18sp"></AutoCompleteTextView>/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextViewWeatherSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Weather2:"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/WeatherSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:spinnerMode="dropdown"
+                    android:textSize="18sp"></Spinner>/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TextViewRAMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Rams reference:"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/RAMSSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:spinnerMode="dropdown"
+                    android:textSize="18sp"></Spinner>/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#000000">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25 "/>
+                />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col1"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col2"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col3"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/col4"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_weight="0.25 "/>
+                />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PotHaz"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/WhaHap"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ActReq"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SafPro"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fall from height"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Death"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="edittext"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox_workingAtHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="#616161"
+                    android:checked="true"
+                    android:gravity="center"
+                    />
+            </TableRow>
+            <!-- beginning of FALLING OBJECTS TABLE 2 ROW 2)-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Falling objects"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Death"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="edittext"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox_fallingObjects"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="#616161"
+                    android:checked="true"
+                    android:gravity="center"
+                    />
+            </TableRow>
+            <!-- end of FALLING OBJECTS TABLE 2 ROW 2)-->
+
+            <!-- beginning of ACCESS TO SITE table 3 row 3)-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Access to Site"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Death"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="edittext"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_weight="0.25"/>
+
+                <Switch
+                    android:id="@+id/switch_fallingObjects"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="#616161"
+                    android:checked="true"
+                    android:gravity="center"
+                    />
+            </TableRow>
+            <!-- end of FALLING OBJECTS TABLE 3 ROW 3)-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"/>
+
+                <Button
+                    android:id="@+id/DoneButtonXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="DONE"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:onClick="checkIfCheckboxesAreChecked"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
